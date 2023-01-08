@@ -1,0 +1,142 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search h3 {
+  width: 33%;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  color: #2D2A26;
+}
+@media (max-width: 1440px) {
+  .search h3 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 1280px) {
+  .search h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 960px) {
+  .search h3 {
+    font-size: 24px;
+  }
+}
+.search__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20.6%;
+  margin-right: 2.6%;
+}
+@media (max-width: 1280px) {
+  .search__item {
+    justify-content: left;
+  }
+}
+.search__item button {
+  width: 100px;
+  height: 100px;
+  margin-right: 8%;
+  border-radius: 24px;
+  background: #826EE8;
+}
+@media (max-width: 1440px) {
+  .search__item button {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 1280px) {
+  .search__item button {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 960px) {
+  .search__item button {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+  }
+}
+.search__item p {
+  max-width: 228px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  color: #2D2A26;
+}
+@media (max-width: 1440px) {
+  .search__item p {
+    width: 154px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 1280px) {
+  .search__item p {
+    width: 100px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 960px) {
+  .search__item p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1280px) {
+  .search__item img {
+    width: 18px;
+    height: 18px;
+  }
+}
+.search__item .button--yellow {
+  background: #FF9838;
+}
+.search__item .button--grey {
+  background: #ABB9C3;
+}
+.search__item:last-of-type {
+  margin-right: 0;
+}
+.seaarch--pt {
+  padding-top: 120px;
+}
+@media (max-width: 1440px) {
+  .seaarch--pt {
+    padding-top: 90px;
+  }
+}
+@media (max-width: 1280px) {
+  .seaarch--pt {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 960px) {
+  .seaarch--pt {
+    padding-top: 40px;
+  }
+}
+.search--pb {
+  padding-bottom: 120px;
+}
+@media (max-width: 1440px) {
+  .search--pb {
+    padding-bottom: 90px;
+  }
+}
+@media (max-width: 1280px) {
+  .search--pb {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 960px) {
+  .search--pb {
+    padding-bottom: 40px;
+  }
+}

@@ -1,0 +1,74 @@
+//@breakpoint
+@breakpoint-Desktop: ~"(max-width: 1920px)";
+@breakpoint-XX-Large: ~"(max-width: 1440px)";
+@breakpoint-Large: ~"(max-width: 1280px)";
+@breakpoint-Medium: ~"(max-width: 960px)";
+@breakpoint-Small: ~"(max-width: 768px)";
+
+.title-link {
+    border: 1px solid blueviolet;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+        //margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 120%; 
+        @media @breakpoint-XX-Large {
+            font-size: 36px;
+        } 
+        @media @breakpoint-Large {
+            font-size: 32px;
+          } 
+        @media @breakpoint-Small {
+            font-size: 24px;
+        }  
+    }
+    a {
+        margin-right: 16px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        text-decoration-line: underline !important;            
+        color: rgba(45, 42, 38, 0.6);
+        @media @breakpoint-Large {
+            font-size: 16px;
+          } 
+        @media @breakpoint-Small {
+            font-size: 12px;
+        }  
+    }
+    a::before {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 16px;
+        bottom: 15px;
+        right: -7px;
+        background-image: url('../../assets/imgs/title-link/title-link.svg');
+        background-repeat: no-repeat;
+        @media @breakpoint-Large {
+            bottom: 8px;
+          } 
+        @media @breakpoint-Small {
+            bottom: 3px;
+        }  
+    }
+}
+.title-link--pt {
+    padding-top: 80px;
+    @media @breakpoint-XX-Large {
+        padding-top: 60px;
+    } 
+    @media @breakpoint-Large {
+        padding-top: 40px;
+      } 
+    @media @breakpoint-Medium {
+        padding-top: 40px;
+    }
+    @media @breakpoint-Small {
+        padding-top: 30px;
+    }
+}

@@ -1,0 +1,49 @@
+@import url('heder/header.css');
+@import url(../font/stylesheet.css);
+@import url(mainSection/mainSection.css);
+@import url(sliderSection/sliderSection.css);
+@import url(card/card.css);
+@import url(titleLink/titleLink.css);
+@import url(bestObjest//bestObjact.css);
+@import url(video/video.css);
+@import url(newObject/newObject.css);
+@import url('infoSection/infoSection.css');
+@import url('searchSection/searchSection.css');
+@import url(footer/footer.css);
+@import url(reset.css);
+@font-face {
+  font-family: Grapfik;
+  src: url(../font/Graphik-Medium.ttf);
+}
+body {
+  font-family: Grapfik, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+.container {
+  max-width: 91.6%;
+  margin: 0 auto;
+}
+@media (max-width: 1440px) {
+  .container {
+    max-width: 94.11%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 89.7%;
+  }
+}
+.height24 {
+  margin-bottom: 16px;
+}
+.disply-none {
+  display: none;
+}
+.height140 {
+  height: 140px;
+}
+@media (max-width: 1440px) {
+  .height140 {
+    height: 0;
+  }
+}

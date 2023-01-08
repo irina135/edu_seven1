@@ -1,0 +1,53 @@
+
+@import url('./heder/header.css');
+@import url(../font/stylesheet.css);
+@import url(./mainSection/mainSection.css);
+@import url(./sliderSection/sliderSection.css);
+@import url(./card/card.css);
+@import url(./titleLink/titleLink.css);
+@import url(./bestObjest//bestObjact.css);
+@import url(./video/video.css);
+@import url(./newObject/newObject.css);
+@import url('./infoSection/infoSection.css');
+@import url('./searchSection/searchSection.css');
+@import url(./footer/footer.css);
+@import url(./reset.css);
+
+//@breakpoint
+@breakpoint-Desktop: ~"(max-width: 1920px)";
+@breakpoint-XX-Large: ~"(max-width: 1440px)";
+@breakpoint-Large: ~"(max-width: 1280px)";
+@breakpoint-Medium: ~"(max-width: 960px)";
+@breakpoint-Small: ~"(max-width: 768px)";
+
+@font-face {
+    font-family: Grapfik;
+    src: url(../font/Graphik-Medium.ttf);
+}
+
+body {
+    font-family: Grapfik, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.container {
+    max-width: 91.6%;
+    margin: 0 auto;
+    @media @breakpoint-XX-Large {
+        max-width: 94.11%;
+      }
+    @media @breakpoint-Small {
+        width: 89.7%;
+      }  
+}
+.height24 {
+    margin-bottom: 16px;
+}
+.disply-none {
+    display: none
+}
+.height140 {
+    height: 140px;
+    @media @breakpoint-XX-Large {
+        height: 0;
+      }
+}
