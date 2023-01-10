@@ -1,6 +1,6 @@
 <template>
     <div>
-      <section class="search search--pb seaarch--pt container disply-none">
+      <section class="search search--pb seaarch--pt container">
         <h3>What to search?</h3>   
         <div class="search__item">
             <button type="button">

@@ -1,5 +1,5 @@
 <template>
-        <div class="best-object__card disply-none">
+        <div class="best-object__card">
             <img
             :src="imgUrls" 
             >

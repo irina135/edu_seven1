@@ -5,7 +5,13 @@
   <TitleLink
   :title="popularObject[0].title"
   ></TitleLink>
-  <SliderSectionVue></SliderSectionVue>
+
+ 
+  <vCarouselVue
+  :carousel_data="slidrtItem"
+  ></vCarouselVue>
+
+
   <TitleLink
   :title="bestObject[0].title"
   ></TitleLink>
@@ -55,7 +61,6 @@
 //import HelloWorld from './components/HelloWorld.vue'
 import HeaderComponent from './components/HeaderComponent.vue';
 import MainSection from './components/MainSection';
-import SliderSectionVue from './components/SliderSection.vue';
 import TitleLink from './components/TitleLink';
 //import BestObjects from './components/BestObjects';
 import VideoSection from './components/VideoSection';
@@ -66,10 +71,12 @@ import FooterConponentVue from './components/FooterConponent.vue';
 import CardComponent from './components/CardComponent.vue'
 import CardLittleComponent from './components/CardLittieComponent.vue'
 
+import vCarouselVue from './components/v-carousel.vue';
+
 export default {
   name: 'App',
   components: {
-    HeaderComponent, MainSection, TitleLink, VideoSection, InfoSection, SearchSection, FooterConponentVue, SliderSectionVue, CardComponent, CardLittleComponent
+    HeaderComponent, MainSection, TitleLink, VideoSection, InfoSection, SearchSection, FooterConponentVue, CardComponent, CardLittleComponent, vCarouselVue
   },
   data(){
     return {
@@ -200,6 +207,17 @@ export default {
         {
           title: 'New objects'
         }
+      ],
+      slidrtItem: [
+        {id: 1, itemTitle: 'Athens', itemNumber: '117', itemText: 'objects', img: 'slider-img1.png'},
+        {id: 2, itemTitle: 'Thessaloniki', itemNumber: '98', itemText: 'objects', img: 'slider-img2.png'},
+        {id: 3, itemTitle: 'Patras', itemNumber: '105', itemText: 'objects', img: 'slider-img3.png'},
+        {id: 4, itemTitle: 'Chania', itemNumber: '991', itemText: 'objects', img: 'slider-img4.png'},
+        {id: 5, itemTitle: 'Heraklion', itemNumber: '96', itemText: 'objects', img: 'slider-img5.png'},
+        {id: 1, itemTitle: 'Rhodes', itemNumber: '117', itemText: 'objects', img: 'slider-img1.png'},
+        {id: 2, itemTitle: 'Rhodes', itemNumber: '98', itemText: 'objects', img: 'slider-img2.png'},
+        {id: 1, itemTitle: 'Rhodes', itemNumber: '117', itemText: 'objects', img: 'slider-img1.png'},
+        {id: 2, itemTitle: 'Rhodes', itemNumber: '98', itemText: 'objects', img: 'slider-img2.png'},
       ]      
     }
   }
