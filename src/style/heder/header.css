@@ -15,6 +15,8 @@
   height: 14px;
 }
 .header__link {
+  position: absolute;
+  left: calc(50% - (132px/2));
   display: flex;
   justify-content: center;
   width: 132px;
@@ -26,6 +28,7 @@
 }
 @media (max-width: 768px) {
   .header__link {
+    left: calc(50% - (116px/2));
     width: 116px;
     height: 40px;
   }

@@ -21,6 +21,9 @@
     }
 }
 .header__link {
+    position: absolute;
+    left: calc(50% - (132px/2));
+    //margin-left: calc((100% - 91%) / 2);
     display: flex;
     justify-content: center;
     width: 132px;
@@ -30,6 +33,7 @@
     padding-top: 4px;
     padding-bottom: 4px;
     @media @breakpoint-Small {
+        left: calc(50% - (116px/2));
         width: 116px;
         height: 40px;
       }

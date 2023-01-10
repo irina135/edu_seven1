@@ -7,7 +7,7 @@
         :style="{ 'margin-left': '-' + (11.7 * currentSlideIndex) + '%'}" 
         >
             <vCarouselItem
-            v-for="item in carousel_data"
+            v-for="item in vvv"
             :key="item.id"
             :item_data="item"
            
@@ -33,12 +33,14 @@ export default {
    data() {
         return {         
             currentSlideIndex: 0,  
+            vvv: this.carousel_data
         }
     }, 
     methods: {
         prevSlide() {
             if (this.currentSlideIndex > 0){
-                this.currentSlideIndex--
+                this.currentSlideIndex--;
+                this.vvv.pop(this.carousel_data[this.currentSlideIndex])
             }  
         },
         nextSlide() {
@@ -48,7 +50,15 @@ export default {
             }
             else {
                 this.currentSlideIndex++;
+                this.vvv.push(this.carousel_data[this.currentSlideIndex - 1]);
+                console.log(this.currentSlideIndex);
             }
+            //vvv = this.carousel_data;
+            //this.carousel_data.push(this.carousel_data[0])
+            //console.log(this.carousel_data[1])
+            
+        
+           //this.carousel_data.pop()
         }
     }
 }
