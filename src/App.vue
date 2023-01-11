@@ -15,7 +15,7 @@
   <TitleLink
   :title="bestObject[0].title"
   ></TitleLink>
-  <div class="best-object best-object--wrap best-object--pt container"> 
+  <div class="best-object best-object--pt container"> 
     <CardComponent v-for="(card, index) in cards"
     :key="index"
     :houseArea="card.houseArea"
@@ -28,6 +28,37 @@
     :imgUrls="card.imgUrls"
     ></CardComponent>
     </div>
+
+    <div class="best-object best-object--pt container vvv"> 
+    <CardComponent v-for="(card, index) in cards"
+    :key="index"
+    :houseArea="card.houseArea"
+    :bedrooms="card.bedrooms"
+    :bathrooms="card.bathrooms"
+    :plot="card.plot"
+    :furnished="card.furnished"
+    :cctv="card.cctv"
+    :terrace="card.terrace"
+    :imgUrls="card.imgUrls"
+    ></CardComponent>
+    </div>
+
+    <div class="best-object best-object--wrap best-object--pt container disply-none"> 
+    <CardComponent v-for="(card, index) in cards"
+    :key="index"
+    :houseArea="card.houseArea"
+    :bedrooms="card.bedrooms"
+    :bathrooms="card.bathrooms"
+    :plot="card.plot"
+    :furnished="card.furnished"
+    :cctv="card.cctv"
+    :terrace="card.terrace"
+    :imgUrls="card.imgUrls"
+    ></CardComponent>
+    </div>
+
+
+
   <VideoSection></VideoSection>
   <TitleLink
   :title="newObjects[0].title"

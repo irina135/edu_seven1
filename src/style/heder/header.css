@@ -1,20 +1,16 @@
-.header {
+.header__head {
   position: relative;
   display: flex;
   justify-content: space-between;
   padding-left: 0.5%;
-  align-items: center;
   height: 80px;
+  align-items: center;
 }
-.header__logo {
-  vertical-align: centre;
-  height: 14px;
-}
-.header__logo img {
+.logo img {
   width: 63px;
   height: 14px;
 }
-.header__link {
+.header__links-wrap {
   position: absolute;
   left: calc(50% - (132px/2));
   display: flex;
@@ -27,42 +23,42 @@
   padding-bottom: 4px;
 }
 @media (max-width: 768px) {
-  .header__link {
+  .header__links-wrap {
     left: calc(50% - (116px/2));
     width: 116px;
     height: 40px;
   }
 }
-.header__link a {
+.header__links-wrap a.header__link {
   border-radius: 32px;
   padding: 12px 16px 8px 16px;
   font-size: 14px;
   color: rgba(45, 42, 38, 0.6);
 }
 @media (max-width: 768px) {
-  .header__link a {
+  .header__links-wrap a.header__link {
     padding: 8px 14px 8px 14px;
     font-size: 12px;
   }
 }
-.header__link a:hover {
+.header__links-wrap a.header__link:hover {
   background: #2D2A26;
   color: white;
 }
-.header__btn {
+.header__btn-wrap {
   display: flex;
   justify-content: end;
   align-items: center;
   width: 40%;
   height: 32px;
 }
-.header__btn button {
+.header__btn-wrap .header__btn-language {
   width: 14px;
   height: 14px;
   border: none;
   background: none;
 }
-.header__btn .language {
+.header__btn-wrap .header__btn-language-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,11 +70,11 @@
   text-transform: uppercase;
 }
 @media (max-width: 768px) {
-  .header__btn .language {
+  .header__btn-wrap .header__btn-language-content {
     display: none;
   }
 }
-.header__btn .avatar {
+.header__btn-wrap .header__btn-avatar {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -89,11 +85,11 @@
   background-size: cover;
 }
 @media (max-width: 768px) {
-  .header__btn .avatar {
+  .header__btn-wrap .header__btn-avatar {
     margin-left: 20px;
   }
 }
-.header__btn .message {
+.header__btn-wrap .header__message {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -107,7 +103,7 @@
   font-weight: 700;
   color: white;
 }
-.header__btn .message p {
+.header__btn-wrap .header__message p {
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;

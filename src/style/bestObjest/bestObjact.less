@@ -5,6 +5,10 @@
 @breakpoint-Medium: ~"(max-width: 960px)";
 @breakpoint-Small: ~"(max-width: 768px)";
 .best-object {
+  display: flex;
+  background: yellow;
+    justify-content: space-between;
+    flex-wrap: wrap;
     @media @breakpoint-XX-Large {
         padding-bottom: 60px;
       }
@@ -48,6 +52,9 @@
         display: flex;
         justify-content: space-between;
     }
+
+    
+
     .address {
         font-weight: 400;
         font-size: 16px;
@@ -108,6 +115,15 @@
         margin-left: 0;
     }
 }
+
+.vvv {
+  background: red;
+  .best-object__card {
+    display: flex;
+  }
+}
+
+
 .best-object--pt {
     padding-top: 40px;
     @media @breakpoint-XX-Large {

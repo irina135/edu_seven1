@@ -1,3 +1,9 @@
+.best-object {
+  display: flex;
+  background: yellow;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 @media (max-width: 1440px) {
   .best-object {
     padding-bottom: 60px;
@@ -122,6 +128,12 @@
 }
 .best-object__card .content:first-of-type {
   margin-left: 0;
+}
+.vvv {
+  background: red;
+}
+.vvv .best-object__card {
+  display: flex;
 }
 .best-object--pt {
   padding-top: 40px;
