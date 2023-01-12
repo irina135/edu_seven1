@@ -1,7 +1,6 @@
 <template>
   
   <HeaderComponent></HeaderComponent>
-  <MainSection></MainSection>
   <TitleLink
   :title="popularObject[0].title"
   ></TitleLink>
@@ -91,7 +90,7 @@
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
 import HeaderComponent from './components/HeaderComponent.vue';
-import MainSection from './components/MainSection';
+//import MainSection from './components/MainSection';
 import TitleLink from './components/TitleLink';
 //import BestObjects from './components/BestObjects';
 import VideoSection from './components/VideoSection';
@@ -107,7 +106,7 @@ import vCarouselVue from './components/v-carousel.vue';
 export default {
   name: 'App',
   components: {
-    HeaderComponent, MainSection, TitleLink, VideoSection, InfoSection, SearchSection, FooterConponentVue, CardComponent, CardLittleComponent, vCarouselVue
+    HeaderComponent, TitleLink, VideoSection, InfoSection, SearchSection, FooterConponentVue, CardComponent, CardLittleComponent, vCarouselVue
   },
   data(){
     return {

@@ -1,10 +1,7 @@
 <template>
     <div class="slider--wrap">
-        <!--<div class="carousel" 
-        :style="{ 'margin-left': '-' + (100 * currentSlideIndex) + '%'}" 
-        >-->
-        <div class="carousel"
-        :style="{ 'margin-left': '-' + (11.7 * currentSlideIndex) + '%'}" 
+        <div class="slider"
+        :style="{ 'margin-left': '-' + (11.43 * currentSlideIndex) + '%'}" 
         >
             <vCarouselItem
             v-for="item in vvv"

@@ -5,12 +5,6 @@
     </div>   
 </template>
 <script>
-
-
-
-
-
-
     export default {
         name: 'TitleLink',
         props: ['title'],
