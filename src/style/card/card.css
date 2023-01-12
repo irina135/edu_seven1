@@ -4,6 +4,7 @@
   flex-wrap: wrap;
 }
 .verticalCardWrap {
+  position: relative;
   display: inline-block;
   width: 48.8%;
   height: auto;
@@ -27,7 +28,7 @@
 @media (max-width: 1440px) {
   .verticalCardWrap .card__img {
     height: 408px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 }
 @media (max-width: 1280px) {
@@ -162,7 +163,7 @@
 .horizontalCardWrap .card__price {
   position: absolute;
   right: 2.5%;
-  top: 180px;
+  top: 210px;
   font-weight: bold !important;
   font-size: 20px;
   line-height: 120%;

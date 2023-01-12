@@ -4,10 +4,8 @@
             :src="imgUrls" 
             >
             <div>
-            <div class="card__price--wrap">
                 <p class="card__address">Apartment, Thessaloniki</p>
                 <p class="card__price"><span>&#36;</span>620000</p>
-            </div>
             <p class="card__name">Mirò Dorcol</p>
             <div class="card__content--wrap">
                 <p class="house--area card__content">{{ houseArea }} м2</p><p class="card__content">&bull;</p>

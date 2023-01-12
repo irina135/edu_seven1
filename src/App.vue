@@ -20,7 +20,7 @@
     :cctv="card.cctv"
     :terrace="card.terrace"
     :imgUrls="card.imgUrls"
-    :class="verticalCardWrap"
+    :class="verticalCard"
     ></CardComponent> 
   </div>
   <VideoSection></VideoSection>
