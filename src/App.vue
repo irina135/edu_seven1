@@ -1,21 +1,16 @@
 <template>
-  
   <HeaderComponent></HeaderComponent>
   <TitleLink
   :title="popularObject[0].title"
   ></TitleLink>
-
- 
   <vCarouselVue
   :carousel_data="slidrtItem"
   ></vCarouselVue>
-
-
   <TitleLink
   :title="bestObject[0].title"
   ></TitleLink>
-  <div class="best-object best-object--pt container"> 
-    <CardComponent v-for="(card, index) in cards"
+  <div class="card__wrap container">
+    <CardComponent v-for="(card, index) in verticalCards"
     :key="index"
     :houseArea="card.houseArea"
     :bedrooms="card.bedrooms"
@@ -25,92 +20,58 @@
     :cctv="card.cctv"
     :terrace="card.terrace"
     :imgUrls="card.imgUrls"
-    ></CardComponent>
-    </div>
-
-    <div class="best-object best-object--pt container vvv"> 
-    <CardComponent v-for="(card, index) in cards"
-    :key="index"
-    :houseArea="card.houseArea"
-    :bedrooms="card.bedrooms"
-    :bathrooms="card.bathrooms"
-    :plot="card.plot"
-    :furnished="card.furnished"
-    :cctv="card.cctv"
-    :terrace="card.terrace"
-    :imgUrls="card.imgUrls"
-    ></CardComponent>
-    </div>
-
-    <div class="best-object best-object--wrap best-object--pt container disply-none"> 
-    <CardComponent v-for="(card, index) in cards"
-    :key="index"
-    :houseArea="card.houseArea"
-    :bedrooms="card.bedrooms"
-    :bathrooms="card.bathrooms"
-    :plot="card.plot"
-    :furnished="card.furnished"
-    :cctv="card.cctv"
-    :terrace="card.terrace"
-    :imgUrls="card.imgUrls"
-    ></CardComponent>
-    </div>
-
-
-
+    :class="verticalCardWrap"
+    ></CardComponent> 
+  </div>
   <VideoSection></VideoSection>
   <TitleLink
   :title="newObjects[0].title"
   ></TitleLink>
   <div class="height24"></div>
-  <div class="new-object--wrap container">
-  <CardLittleComponent v-for="(cardLittle, index) in cardsLittle"
-  :key="index"
-  :houseArea="cardLittle.houseArea"
-  :bedrooms="cardLittle.bedrooms"
-  :bathrooms="cardLittle.bathrooms"
-  :plot="cardLittle.plot"
-  :furnished="cardLittle.furnished"
-  :cctv="cardLittle.CCTV"
-  :terrace="cardLittle.terrace"
-  :imgUrls="cardLittle.imgUrls"
-  :price="cardLittle.price"
-  ></CardLittleComponent>  
+  <div class="card__wrap container">
+    <CardComponent v-for="(card, index) in cardsHorizontal"
+    :key="index"
+    :houseArea="card.houseArea"
+    :bedrooms="card.bedrooms"
+    :bathrooms="card.bathrooms"
+    :plot="card.plot"
+    :furnished="card.furnished"
+    :cctv="card.cctv"
+    :terrace="card.terrace"
+    :imgUrls="card.imgUrls"
+    :class="horizontalCard"
+    ></CardComponent> 
   </div>
   <div class="height140"></div>
   <InfoSection></InfoSection>
   <SearchSection></SearchSection>
   <FooterConponentVue></FooterConponentVue>
- 
-
-  
- 
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
 import HeaderComponent from './components/HeaderComponent.vue';
-//import MainSection from './components/MainSection';
 import TitleLink from './components/TitleLink';
-//import BestObjects from './components/BestObjects';
 import VideoSection from './components/VideoSection';
-//import NewObject from './components/NewObject';
 import InfoSection from './components/InfoSection';
 import SearchSection from './components/SearchSection.vue';
 import FooterConponentVue from './components/FooterConponent.vue';
 import CardComponent from './components/CardComponent.vue'
-import CardLittleComponent from './components/CardLittieComponent.vue'
-
 import vCarouselVue from './components/v-carousel.vue';
 
 export default {
   name: 'App',
   components: {
-    HeaderComponent, TitleLink, VideoSection, InfoSection, SearchSection, FooterConponentVue, CardComponent, CardLittleComponent, vCarouselVue
+    HeaderComponent, TitleLink, VideoSection, InfoSection, SearchSection, FooterConponentVue, CardComponent, vCarouselVue
   },
   data(){
     return {
-      cards: [
+      verticalCard: {
+        verticalCardWrap: true
+      },
+      horizontalCard: {
+        horizontalCardWrap: true
+      },
+      verticalCards: [
                 {
                   houseArea: '28',
                   bedrooms: '4',
@@ -132,7 +93,7 @@ export default {
                   imgUrls: require("../../project/src/assets/imgs/best-object/best-oblecta.png")
                 },
             ],
-      cardsLittle: [
+      cardsHorizontal: [
                 {
                   houseArea: '28',
                   bedrooms: '4',
