@@ -1,5 +1,4 @@
 .slider--wrap {
-  border: 1px solid red;
   height: 435px;
   overflow: hidden;
   margin-left: calc((100% - 91.6%) / 2);
@@ -20,9 +19,6 @@
   display: flex;
   transition: all ease 0.5s;
 }
-/*.carousel-img {
-    min-width: 265px;
-  }*/
 .slider__item {
   margin-right: 20px;
 }
