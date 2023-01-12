@@ -5,92 +5,90 @@
 @breakpoint-Medium: ~"(max-width: 960px)";
 @breakpoint-Small: ~"(max-width: 768px)";
 .search {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    h3 {
-        width: 33%;
-        font-weight: 700;
-        font-size: 42px;
-        line-height: 120%;
-        color: #2D2A26;
-        @media @breakpoint-XX-Large {
-            font-size: 36px;
-          }
-        @media @breakpoint-Large {
-            font-size: 30px;
-          } 
-        @media @breakpoint-Medium {
-            font-size: 24px;
-          }  
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search__title {
+  width: 33%;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  color: #2D2A26;
+  @media @breakpoint-XX-Large {
+    font-size: 36px;
+  }
+  @media @breakpoint-Large {
+    font-size: 30px;
+  } 
+  @media @breakpoint-Medium {
+    font-size: 24px;
+  } 
 }
 .search__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 20.6%;
-    margin-right: 2.6%;
-    @media @breakpoint-Large {
-        justify-content: left;
-      } 
-    
-    button {
-        width: 100px;
-        height: 100px;
-        margin-right: 8%;
-        border-radius: 24px;
-        background: #826EE8;  
-        @media @breakpoint-XX-Large {
-            width: 80px;
-            height: 80px;
-          } 
-        @media @breakpoint-Large {
-            width: 60px;
-            height: 60px;
-            border-radius: 14px;
-            margin-right: 5%;
-          }  
-        @media @breakpoint-Medium {
-            width: 50px;
-            height: 50px;
-            border-radius: 12px;
-          }   
-    }
-    p {
-        max-width: 228px;
-        //max-width: 85%;
-        font-weight: 600;
-        font-size: 30px;
-        line-height: 120%;  
-        color: #2D2A26;
-        @media @breakpoint-XX-Large {
-            width: 154px;
-            font-size: 24px;
-          }
-        @media @breakpoint-Large {
-            width: 100px;
-            font-size: 20px;
-          }   
-        @media @breakpoint-Medium {
-            font-size: 14px;
-          }
-    }
-    img {
-        @media @breakpoint-Large {
-            width: 18px;
-            height: 18px;
-          } 
-    }
-    .button--yellow {
-        background: #FF9838;
-    }
-    .button--grey {
-        background: #ABB9C3;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20.6%;
+  margin-right: 2.6%;
+  @media @breakpoint-Large {
+    justify-content: left;
+  }
 } 
 .search__item:last-of-type {
-    margin-right: 0;
+  margin-right: 0;
+}
+.search__button {
+  width: 100px;
+  height: 100px;
+  margin-right: 8%;
+  border-radius: 24px;
+  background: #826EE8;  
+  @media @breakpoint-XX-Large {
+    width: 80px;
+    height: 80px;
+  } 
+  @media @breakpoint-Large {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    margin-right: 5%;
+  }  
+  @media @breakpoint-Medium {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+  }
+}
+.search__button--yellow {
+  background: #FF9838;
+}
+.search__button--grey {
+  background: #ABB9C3;
+}
+.search__buttim-img {
+  @media @breakpoint-Large {
+    width: 18px;
+    height: 18px;
+  }
+}
+.search__text {
+  max-width: 228px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;  
+  color: #2D2A26;
+  @media @breakpoint-XX-Large {
+    width: 154px;
+    font-size: 24px;
+  }
+  @media @breakpoint-Large {
+    width: 100px;
+    font-size: 20px;
+  }   
+  @media @breakpoint-Medium {
+    font-size: 14px;
+  }
 }
 .seaarch--pt {
   padding-top: 120px;
@@ -105,14 +103,14 @@
   }
 }
 .search--pb {
-    padding-bottom: 120px;
-    @media @breakpoint-XX-Large {
-        padding-bottom: 90px;
-      }
-    @media @breakpoint-Large {
-        padding-bottom: 60px;
-      } 
-    @media @breakpoint-Medium {
-        padding-bottom: 40px;
-      }
+  padding-bottom: 120px;
+  @media @breakpoint-XX-Large {
+    padding-bottom: 90px;
+  }
+  @media @breakpoint-Large {
+    padding-bottom: 60px;
+  } 
+  @media @breakpoint-Medium {
+    padding-bottom: 40px;
+  }
 }

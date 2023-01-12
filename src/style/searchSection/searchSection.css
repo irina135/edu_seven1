@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.search h3 {
+.search__title {
   width: 33%;
   font-weight: 700;
   font-size: 42px;
@@ -11,17 +11,17 @@
   color: #2D2A26;
 }
 @media (max-width: 1440px) {
-  .search h3 {
+  .search__title {
     font-size: 36px;
   }
 }
 @media (max-width: 1280px) {
-  .search h3 {
+  .search__title {
     font-size: 30px;
   }
 }
 @media (max-width: 960px) {
-  .search h3 {
+  .search__title {
     font-size: 24px;
   }
 }
@@ -37,7 +37,10 @@
     justify-content: left;
   }
 }
-.search__item button {
+.search__item:last-of-type {
+  margin-right: 0;
+}
+.search__button {
   width: 100px;
   height: 100px;
   margin-right: 8%;
@@ -45,13 +48,13 @@
   background: #826EE8;
 }
 @media (max-width: 1440px) {
-  .search__item button {
+  .search__button {
     width: 80px;
     height: 80px;
   }
 }
 @media (max-width: 1280px) {
-  .search__item button {
+  .search__button {
     width: 60px;
     height: 60px;
     border-radius: 14px;
@@ -59,13 +62,25 @@
   }
 }
 @media (max-width: 960px) {
-  .search__item button {
+  .search__button {
     width: 50px;
     height: 50px;
     border-radius: 12px;
   }
 }
-.search__item p {
+.search__button--yellow {
+  background: #FF9838;
+}
+.search__button--grey {
+  background: #ABB9C3;
+}
+@media (max-width: 1280px) {
+  .search__buttim-img {
+    width: 18px;
+    height: 18px;
+  }
+}
+.search__text {
   max-width: 228px;
   font-weight: 600;
   font-size: 30px;
@@ -73,36 +88,21 @@
   color: #2D2A26;
 }
 @media (max-width: 1440px) {
-  .search__item p {
+  .search__text {
     width: 154px;
     font-size: 24px;
   }
 }
 @media (max-width: 1280px) {
-  .search__item p {
+  .search__text {
     width: 100px;
     font-size: 20px;
   }
 }
 @media (max-width: 960px) {
-  .search__item p {
+  .search__text {
     font-size: 14px;
   }
-}
-@media (max-width: 1280px) {
-  .search__item img {
-    width: 18px;
-    height: 18px;
-  }
-}
-.search__item .button--yellow {
-  background: #FF9838;
-}
-.search__item .button--grey {
-  background: #ABB9C3;
-}
-.search__item:last-of-type {
-  margin-right: 0;
 }
 .seaarch--pt {
   padding-top: 120px;
