@@ -1,4 +1,4 @@
-.investment-property {
+.info {
   height: 720px;
   padding-left: 53.6%;
   padding-top: 160px;
@@ -11,7 +11,7 @@
   background-size: 100% auto;
 }
 @media (max-width: 1440px) {
-  .investment-property {
+  .info {
     box-sizing: border-box;
     height: 600px;
     margin-top: 120px !important;
@@ -22,7 +22,7 @@
   }
 }
 @media (max-width: 1280px) {
-  .investment-property {
+  .info {
     margin-top: 80px !important;
     margin-bottom: 50px !important;
     padding-top: 120px;
@@ -30,7 +30,7 @@
   }
 }
 @media (max-width: 960px) {
-  .investment-property {
+  .info {
     height: 400px;
     padding-right: 5%;
     padding-top: 100px;
@@ -38,7 +38,7 @@
   }
 }
 @media (max-width: 768px) {
-  .investment-property {
+  .info {
     margin-bottom: 30px !important;
     height: 460px;
     background-image: url(../../assets//imgs/investment-property/investment-property-mobile.png);
@@ -46,7 +46,7 @@
     padding-left: 9%;
   }
 }
-.investment-property h2 {
+.info__title {
   margin-bottom: 20px;
   font-weight: 900;
   font-size: 80px;
@@ -56,62 +56,59 @@
   color: white;
 }
 @media (max-width: 1440px) {
-  .investment-property h2 {
+  .info__title {
     font-size: 60px;
   }
 }
 @media (max-width: 1280px) {
-  .investment-property h2 {
+  .info__title {
     font-size: 54px;
   }
 }
 @media (max-width: 960px) {
-  .investment-property h2 {
+  .info__title {
     margin-bottom: 15px;
     font-size: 36px;
   }
 }
 @media (max-width: 768px) {
-  .investment-property h2 {
+  .info__title {
     margin-bottom: 20px;
     font-size: 36px;
   }
 }
-.investment-property p {
+.info__text {
   margin-bottom: 60px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 160%;
   color: white;
 }
 @media (max-width: 1440px) {
-  .investment-property p {
+  .info__text {
     font-size: 18px;
     margin-bottom: 64px;
   }
 }
 @media (max-width: 1280px) {
-  .investment-property p {
+  .info__text {
     font-size: 16px;
     margin-bottom: 54px;
   }
 }
 @media (max-width: 960px) {
-  .investment-property p {
+  .info__text {
     margin-bottom: 25px;
     font-size: 14px;
     line-height: 140%;
   }
 }
 @media (max-width: 768px) {
-  .investment-property p {
+  .info__text {
     width: 100%;
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 25.6px;
   }
 }
-.investment-property a {
+.info__link {
   padding: 20px 40px;
   border-radius: 8px;
   background: white;
@@ -122,18 +119,18 @@
   color: #2D2A26;
 }
 @media (max-width: 1280px) {
-  .investment-property a {
+  .info__link {
     font-size: 16px;
     padding: 10px 30px;
   }
 }
 @media (max-width: 960px) {
-  .investment-property a {
+  .info__link {
     font-size: 14px;
   }
 }
 @media (max-width: 768px) {
-  .investment-property a {
+  .info__link {
     padding: 13px 24px;
     font-size: 16px;
     line-height: 160%;

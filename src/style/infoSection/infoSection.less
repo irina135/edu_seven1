@@ -3,114 +3,111 @@
 @breakpoint-Large: ~"(max-width: 1280px)";
 @breakpoint-Medium: ~"(max-width: 960px)";
 @breakpoint-Small: ~"(max-width: 768px)";
-.investment-property {
-    height: 720px;
-    padding-left: 53.6%;
-    padding-top: 160px;
-    padding-right: 8%;
-    border-radius: 24px;
-    background-image: url('../../assets/imgs/investment-property/investment-property.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% auto;
-    @media @breakpoint-XX-Large {
-      box-sizing: border-box;
-        height: 600px;
-        margin-top: 120px !important;
-        margin-bottom: 90px !important;
-        padding-top: 151px;
-        padding-left: 55%;
-        background-size: 100% 100%;
-      }
-      @media @breakpoint-Large {
-        margin-top: 80px !important;
-        margin-bottom: 50px !important;
-        padding-top: 120px;
-        height: 500px;
-      }
-      @media @breakpoint-Medium {
-        height: 400px;
-        padding-right: 5%;
-        padding-top: 100px;
-        margin-bottom: 40px;
-      }
-      @media @breakpoint-Small {
-        margin-bottom: 30px !important;
-        height: 460px;
-        background-image: url(../../assets//imgs/investment-property/investment-property-mobile.png);
-        padding-top: 150px;
-        padding-left: 9%;
-      } 
-    h2 {
-        margin-bottom: 20px;
-        font-weight: 900;
-        font-size: 80px;
-        line-height: 100%;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: white;
-        @media @breakpoint-XX-Large {
-            font-size: 60px;
-        }
-        @media @breakpoint-Large {
-            font-size: 54px;
-        }
-        @media @breakpoint-Medium {
-          margin-bottom: 15px;
-          font-size: 36px;
-        }
-        @media @breakpoint-Small {
-          margin-bottom: 20px;
-          font-size: 36px;
-        }
-    }
-    p {
-        margin-bottom: 60px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 160%;
-        color: white;
-        @media @breakpoint-XX-Large {
-            font-size: 18px;
-            margin-bottom: 64px;
-          }
-        @media @breakpoint-Large {
-            font-size: 16px;
-            margin-bottom: 54px;
-          }
-        @media @breakpoint-Medium {
-            margin-bottom: 25px;
-            font-size: 14px;
-            line-height: 140%;
-          }
-        @media @breakpoint-Small {
-          width: 100%;
-          margin-bottom: 30px;
-          font-size: 16px;
-          line-height: 25.6px;
-          }  
-    }
-    a {
-        padding: 20px 40px;
-        border-radius: 8px;
-        background: white;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 120%;
-        text-transform: uppercase;
-        color: #2D2A26;
-        @media @breakpoint-Large {
-          font-size: 16px;
-          padding: 10px 30px;
-       }
-        @media @breakpoint-Medium {
-          font-size: 14px;
-      }
-      @media @breakpoint-Small {
-        padding: 13px 24px;
-        font-size: 16px;
-        line-height: 160%;
-        } 
-    } 
+.info {
+  height: 720px;
+  padding-left: 53.6%;
+  padding-top: 160px;
+  padding-right: 8%;
+  border-radius: 24px;
+  background-image: url('../../assets/imgs/investment-property/investment-property.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  @media @breakpoint-XX-Large {
+    box-sizing: border-box;
+    height: 600px;
+    margin-top: 120px !important;
+    margin-bottom: 90px !important;
+    padding-top: 151px;
+    padding-left: 55%;
+    background-size: 100% 100%;
+  }
+  @media @breakpoint-Large {
+    margin-top: 80px !important;
+    margin-bottom: 50px !important;
+    padding-top: 120px;
+    height: 500px;
+  }
+  @media @breakpoint-Medium {
+    height: 400px;
+    padding-right: 5%;
+    padding-top: 100px;
+    margin-bottom: 40px;
+  }
+  @media @breakpoint-Small {
+    margin-bottom: 30px !important;
+    height: 460px;
+    background-image: url(../../assets//imgs/investment-property/investment-property-mobile.png);
+    padding-top: 150px;
+    padding-left: 9%;
+  }   
+}
+.info__title {
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  @media @breakpoint-XX-Large {
+    font-size: 60px;
+  }
+  @media @breakpoint-Large {
+    font-size: 54px;
+  }
+  @media @breakpoint-Medium {
+    margin-bottom: 15px;
+    font-size: 36px;
+  }
+  @media @breakpoint-Small {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+}
+.info__text {
+  margin-bottom: 60px;
+  color: white;
+  @media @breakpoint-XX-Large {
+    font-size: 18px;
+    margin-bottom: 64px;
+  }
+  @media @breakpoint-Large {
+    font-size: 16px;
+    margin-bottom: 54px;
+  }
+  @media @breakpoint-Medium {
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  @media @breakpoint-Small {
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
+.info__link {
+  padding: 20px 40px;
+  border-radius: 8px;
+  background: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #2D2A26;
+  @media @breakpoint-Large {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+  @media @breakpoint-Medium {
+    font-size: 14px;
+  }
+  @media @breakpoint-Small {
+    padding: 13px 24px;
+    font-size: 16px;
+    line-height: 160%;
+  }
 }

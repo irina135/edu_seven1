@@ -17,7 +17,6 @@
                 <div class="video__overly" id="video-overly">  
                 </div>
             </div> 
-
     </section>
     </div>   
 </template>
