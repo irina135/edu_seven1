@@ -5,39 +5,12 @@
 @breakpoint-Medium: ~"(max-width: 960px)";
 @breakpoint-Small: ~"(max-width: 768px)";
 
+//styles for verticalCard and horizontalCard
 .card__wrap {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-//verticalCardWrap
-.verticalCardWrap {
-    position: relative;
-    display: inline-block;
-    width: 48.8%;
-    height: auto;
-    margin-bottom: 80px;
-    @media @breakpoint-XX-Large {
-        margin-bottom: 60px;
-        width: 48.5%;
-    }
-    @media @breakpoint-Large {
-        margin-bottom: 40px;
-    }
-    .card__img {
-        width: 100%;
-        margin-bottom: 20px;
-        @media @breakpoint-XX-Large {
-            height: 408px;
-            margin-bottom: 23px;
-        }   
-        @media @breakpoint-Large {
-            height: auto;
-        } 
-    }  
-}
-
 .card__price--wrap {
     position: relative;
     display: flex;
@@ -99,6 +72,33 @@
 }
 .content:first-of-type {
     margin-left: 0;
+}
+
+//verticalCardWrap
+.verticalCardWrap {
+    position: relative;
+    display: inline-block;
+    width: 48.8%;
+    height: auto;
+    margin-bottom: 80px;
+    @media @breakpoint-XX-Large {
+        margin-bottom: 60px;
+        width: 48.5%;
+    }
+    @media @breakpoint-Large {
+        margin-bottom: 40px;
+    }
+    .card__img {
+        width: 100%;
+        margin-bottom: 20px;
+        @media @breakpoint-XX-Large {
+            height: 408px;
+            margin-bottom: 23px;
+        }   
+        @media @breakpoint-Large {
+            height: auto;
+        } 
+    }  
 }
 
 //horizontalCardWrap
