@@ -15,7 +15,7 @@
                 </ul>
             </div>
             <div class="footer__sell">
-                <h4>How to sell/rent real estate?</h4>
+                <h4 class="footer__title">How to sell/rent real estate?</h4>
                 <ul>
                     <li><a class="footer__link" href="#">I am the owner</a></li>
                     <li><a class="footer__link" href="">I am a realtor</a></li>
