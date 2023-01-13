@@ -22,6 +22,7 @@
 .card__price {
   position: absolute;
   right: 2.5%;
+  bottom: 120px;
   font-weight: bold !important;
   font-size: 28px;
   line-height: 120%;
@@ -82,7 +83,8 @@
   display: inline-block;
   width: 48.8%;
   height: auto;
-  margin-bottom: 80px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 @media (max-width: 1440px) {
   .verticalCardWrap {
@@ -159,6 +161,11 @@
 }
 .horizontalCardWrap .card__address {
   margin-top: 10px;
+  font-size: 14px;
+}
+.horizontalCardWrap .card__name {
+  font-size: 24px;
+  margin-bottom: 2px;
 }
 .horizontalCardWrap .card__price {
   position: absolute;
