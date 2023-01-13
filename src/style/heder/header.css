@@ -220,12 +220,32 @@
     margin-right: 14px;
   }
 }
+@media (max-width: 768px) {
+  .header__filter-img {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header__filter-img:first-of-type {
+    display: inline-block;
+  }
+}
 .header__filter-wrap {
   text-align: left;
 }
 @media (max-width: 960px) {
   .header__filter-wrap {
     max-width: 22%;
+  }
+}
+@media (max-width: 768px) {
+  .header__filter-wrap {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header__filter-wrap:first-of-type {
+    display: inline-block;
   }
 }
 .header__filter-btn {
@@ -290,6 +310,8 @@
   .header__filter-btn-submit {
     position: absolute;
     right: 4px;
+    padding-left: 0;
+    padding-top: 16px;
   }
 }
 .header__filter-btn-img {

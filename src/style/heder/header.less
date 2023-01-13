@@ -195,12 +195,28 @@
     @media @breakpoint-Large {
         margin-right: 14px;
     } 
+    @media @breakpoint-Small {
+        display: none;
+    }
+    &:first-of-type {
+        @media @breakpoint-Small {
+            display: inline-block;
+        }        
+    }
 }
 .header__filter-wrap {
     text-align: left;
     @media @breakpoint-Medium {
         max-width: 22%;
     } 
+    @media @breakpoint-Small {
+        display: none;
+    }
+}
+.header__filter-wrap:first-of-type {
+    @media @breakpoint-Small {
+        display: inline-block;
+    }
 }
 .header__filter-btn {
     font-weight: 600;
@@ -252,6 +268,8 @@
     @media @breakpoint-Small {
         position: absolute;
         right: 4px;
+        padding-left: 0;
+        padding-top: 16px;
     }
 }
 .header__filter-btn-img {
@@ -265,5 +283,6 @@
     display: none;
     @media @breakpoint-Small {
         display: inline-block;
+        //margin-right: 17px;
     } 
 }

@@ -3,13 +3,13 @@
   <TitleLink
   :title="popularObject[0].title"
   ></TitleLink>
-  <vCarouselVue
+  <vCarouselVue class="disply-none"
   :carousel_data="slidrtItem"
   ></vCarouselVue>
   <TitleLink
   :title="bestObject[0].title"
   ></TitleLink>
-  <div class="card__wrap container">
+  <div class="card__wrap container disply-none">
     <CardComponent v-for="(card, index) in verticalCards"
     :key="index"
     :houseArea="card.houseArea"
@@ -23,12 +23,12 @@
     :class="verticalCard"
     ></CardComponent> 
   </div>
-  <VideoSection></VideoSection>
+  <VideoSection class="disply-none"></VideoSection>
   <TitleLink
   :title="newObjects[0].title"
   ></TitleLink>
   <div class="height24"></div>
-  <div class="card__wrap container">
+  <div class="card__wrap container disply-none">
     <CardComponent v-for="(card, index) in cardsHorizontal"
     :key="index"
     :houseArea="card.houseArea"
@@ -43,8 +43,8 @@
     ></CardComponent> 
   </div>
   <div class="height140"></div>
-  <InfoSection></InfoSection>
-  <SearchSection></SearchSection>
+  <InfoSection class="disply-none"></InfoSection>
+  <SearchSection class="disply-none"></SearchSection>
   <FooterConponentVue></FooterConponentVue>
 </template>
 
