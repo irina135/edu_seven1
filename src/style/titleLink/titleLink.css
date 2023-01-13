@@ -53,6 +53,11 @@
   background-image: url('../../assets/imgs/title-link/title-link.svg');
   background-repeat: no-repeat;
 }
+@media (max-width: 1440px) {
+  .title-link a::before {
+    bottom: 10px;
+  }
+}
 @media (max-width: 1280px) {
   .title-link a::before {
     bottom: 8px;

@@ -85,6 +85,7 @@
     padding-top: 40px;
     @media @breakpoint-XX-Large {
         margin-bottom: 60px;
+        padding-top: 35px;
         width: 48.5%;
     }
     @media @breakpoint-Large {
@@ -147,6 +148,10 @@
     .card__name {
         font-size: 24px;
         margin-bottom: 2px;
+        @media @breakpoint-XX-Large {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
     }
     .card__price {
         position: absolute;
@@ -158,13 +163,21 @@
         letter-spacing: 1.2px;
         color: #2D2A26;
         @media @breakpoint-XX-Large {
-            font-size: 22px;
-            right: 7.9%;
+            top: 160px;
+            font-size: 16px;
+            right: 4.8%;
         }
         @media @breakpoint-Medium {
             font-size: 18px;
             right: 5%;
         }
+    }
+    .card__content {
+        margin-left: 0;
+        @media @breakpoint-XX-Large {
+            font-size: 14px;
+            line-height: 120%;
+        } 
     }
 }
 

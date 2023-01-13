@@ -35,7 +35,7 @@
                     </div>
                     <div class="header__filter-line">
                         </div>
-                    <img class="header__filter-img" src="../assets/imgs/section-main/main-img1.svg" alt="img">
+                    <img class="header__filter-img" src="../assets/imgs/section-main/main-img2.svg" alt="img">
                     <div class="header__filter-wrap">
                         <button class="header__filter-btn" type="button">
                             District
@@ -44,7 +44,7 @@
                     </div>
                     <div class="header__filter-line">
                         </div>
-                    <img class="header__filter-img" src="../assets/imgs/section-main/main-img1.svg" alt="img">
+                    <img class="header__filter-img" src="../assets/imgs/section-main/main-img3.svg" alt="img">
                     <div class="header__filter-wrap">
                         <button class="header__filter-btn" type="button">
                             District
