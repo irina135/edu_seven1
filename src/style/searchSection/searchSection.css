@@ -3,6 +3,11 @@
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .search {
+    display: none;
+  }
+}
 .search__title {
   width: 33.5%;
   font-weight: 700;

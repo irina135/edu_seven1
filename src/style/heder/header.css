@@ -11,6 +11,11 @@
     height: 82px;
   }
 }
+@media (max-width: 768px) {
+  .header__head {
+    height: 60px;
+  }
+}
 .logo {
   width: 63px;
   height: 14px;
@@ -51,6 +56,11 @@
 .header__links--position {
   position: absolute;
   left: calc(50% - (132px/2));
+}
+@media (max-width: 768px) {
+  .header__links--position {
+    left: 85px;
+  }
 }
 .header__btn-wrap {
   display: flex;
@@ -110,10 +120,20 @@
   font-weight: 700;
   color: white;
 }
+@media (max-width: 768px) {
+  .header__btn-wrap .header__message {
+    bottom: 32px;
+  }
+}
 .header__btn-wrap .header__message p {
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
+}
+@media (max-width: 768px) {
+  .header__btn-wrap .header__message p {
+    font-size: 10px;
+  }
 }
 .header__banner {
   height: 600px;
