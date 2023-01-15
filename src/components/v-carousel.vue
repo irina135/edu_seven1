@@ -1,10 +1,10 @@
 <template>
     <div class="slider--wrap">
         <div class="slider"
-        :style="{ 'margin-left': '-' + (11.43 * currentSlideIndex) + '%'}" 
+        :style="{ 'margin-left': '-' + (this.itemWidth * currentSlideIndex) + 'px'}" 
         >
             <vCarouselItem
-            v-for="item in vvv"
+            v-for="item in carouselItems"
             :key="item.id"
             :item_data="item"
            
@@ -30,32 +30,37 @@ export default {
    data() {
         return {         
             currentSlideIndex: 0,  
-            vvv: this.carousel_data
+            carouselItems: this.carousel_data,
+            itemWidth: 280,
         }
     }, 
     methods: {
         prevSlide() {
             if (this.currentSlideIndex > 0){
                 this.currentSlideIndex--;
-                this.vvv.pop(this.carousel_data[this.currentSlideIndex])
+                this.carouselItems.pop(this.carousel_data[this.currentSlideIndex])
             }  
         },
         nextSlide() {
-            
-             if (this.currentSlideIndex >= this.carousel_data.length - 1){
-               this.currentSlideIndex = 0
-            }
-            else {
+            const availableScreenWidth = window.innerWidth;  
+            if (availableScreenWidth > 1440)  {
+                if (this.currentSlideIndex >= this.carousel_data.length - 1){
+                this.currentSlideIndex = 0;
+                }
+            else { 
                 this.currentSlideIndex++;
-                this.vvv.push(this.carousel_data[this.currentSlideIndex - 1]);
-                console.log(this.currentSlideIndex);
+                this.carouselItems.push(this.carousel_data[this.currentSlideIndex - 1]);
+                }
+            } else {
+                this.itemWidth = 233;
+                if (this.currentSlideIndex >= this.carousel_data.length - 1){
+                this.currentSlideIndex = 0;
+                }
+            else { 
+                this.currentSlideIndex++;
+                this.carouselItems.push(this.carousel_data[this.currentSlideIndex - 1]);
+                }
             }
-            //vvv = this.carousel_data;
-            //this.carousel_data.push(this.carousel_data[0])
-            //console.log(this.carousel_data[1])
-            
-        
-           //this.carousel_data.pop()
         }
     }
 }
