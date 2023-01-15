@@ -79,6 +79,7 @@
 @media (max-width: 768px) {
   .video__text {
     width: 100%;
+    letter-spacing: 0;
     margin-bottom: 30px;
   }
 }
@@ -93,6 +94,11 @@
 @media (max-width: 960px) {
   .video__text:first-of-type {
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .video__text:first-of-type {
+    margin-bottom: 25px;
   }
 }
 .video__btn {
@@ -127,6 +133,7 @@
   .video__btn {
     width: 191px;
     height: 45px;
+    margin-top: 0;
     margin-bottom: 40px;
     font-size: 16px;
     line-height: 120%;

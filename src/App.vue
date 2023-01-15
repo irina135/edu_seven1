@@ -23,6 +23,9 @@
     :class="verticalCard"
     ></CardComponent> 
   </div>
+  <!--<div class="height350">
+    Bect object
+  </div>-->
   <VideoSection></VideoSection>
   <TitleLink
   :title="newObjects[0].title"

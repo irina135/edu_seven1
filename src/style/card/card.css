@@ -98,6 +98,13 @@
     margin-bottom: 40px;
   }
 }
+@media (max-width: 768px) {
+  .verticalCardWrap {
+    width: 300px;
+    padding-top: 20px;
+    display: none;
+  }
+}
 .verticalCardWrap .card__img {
   width: 100%;
   margin-bottom: 20px;
@@ -111,6 +118,11 @@
 @media (max-width: 1280px) {
   .verticalCardWrap .card__img {
     height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .verticalCardWrap .card__img {
+    height: 198px;
   }
 }
 .horizontalCardWrap {
@@ -135,6 +147,8 @@
 @media (max-width: 768px) {
   .horizontalCardWrap {
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 .horizontalCardWrap img {
@@ -156,6 +170,12 @@
     margin-right: 18px;
   }
 }
+@media (max-width: 768px) {
+  .horizontalCardWrap img {
+    width: 140px;
+    height: 130px;
+  }
+}
 .horizontalCardWrap .card__content--wrap {
   display: inline-block;
   max-width: 436px;
@@ -163,6 +183,17 @@
 .horizontalCardWrap .card__address {
   margin-top: 10px;
   font-size: 14px;
+}
+@media (max-width: 960px) {
+  .horizontalCardWrap .card__address {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .horizontalCardWrap .card__address {
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
 }
 .horizontalCardWrap .card__name {
   font-size: 24px;
@@ -172,6 +203,19 @@
   .horizontalCardWrap .card__name {
     font-size: 18px;
     margin-bottom: 0;
+  }
+}
+@media (max-width: 960px) {
+  .horizontalCardWrap .card__name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .horizontalCardWrap .card__name {
+    font-size: 16px;
+    line-height: 15px;
+    margin-bottom: 5px;
   }
 }
 .horizontalCardWrap .card__price {
@@ -186,15 +230,23 @@
 }
 @media (max-width: 1440px) {
   .horizontalCardWrap .card__price {
-    top: 160px;
+    top: 145px;
     font-size: 16px;
     right: 4.8%;
   }
 }
 @media (max-width: 960px) {
   .horizontalCardWrap .card__price {
+    top: 118px;
     font-size: 18px;
     right: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .horizontalCardWrap .card__price {
+    font-size: 16px;
+    top: 125px;
+    right: 2%;
   }
 }
 .horizontalCardWrap .card__content {
@@ -204,5 +256,16 @@
   .horizontalCardWrap .card__content {
     font-size: 14px;
     line-height: 120%;
+  }
+}
+@media (max-width: 960px) {
+  .horizontalCardWrap .card__content {
+    font-size: 12x;
+  }
+}
+@media (max-width: 768px) {
+  .horizontalCardWrap .card__content {
+    font-size: 12px;
+    line-height: 16px;
   }
 }

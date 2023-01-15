@@ -117,6 +117,7 @@
     margin-bottom: 60px;
     font-size: 16px;
     line-height: 120%;
+    width: 350px;
   }
 }
 .footer__title {
@@ -163,7 +164,7 @@
 @media (max-width: 768px) {
   .footer__link {
     font-size: 16px;
-    line-height: 120%;
+    line-height: 155%;
   }
 }
 .footer--pt {

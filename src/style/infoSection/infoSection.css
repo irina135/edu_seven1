@@ -40,6 +40,7 @@
 @media (max-width: 768px) {
   .info {
     margin-bottom: 30px !important;
+    margin-top: 65px !important;
     height: 460px;
     background-image: url(../../assets//imgs/investment-property/investment-property-mobile.png);
     padding-top: 150px;
@@ -102,8 +103,8 @@
 }
 @media (max-width: 768px) {
   .info__text {
-    width: 100%;
-    margin-bottom: 30px;
+    width: 95% !important;
+    margin-bottom: 40px;
     font-size: 16px;
     line-height: 25.6px;
   }
